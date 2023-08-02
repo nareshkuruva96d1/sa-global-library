@@ -7,7 +7,7 @@ def call (Map pipelineParams){
         agent any
         environment {
             APP_NAME = ${pipelineParams.appName}
-    }
+        }
         stages {
             stage('echo'){
                 steps {APP_NAME
