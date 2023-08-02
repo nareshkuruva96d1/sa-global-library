@@ -1,7 +1,6 @@
 import com.knrsacadamy.builds.Calculator
 def call (Map pipelineParams){
     Calculator calculator = new Calculator(this)
-
     pipeline {
         agent any
         environment {
