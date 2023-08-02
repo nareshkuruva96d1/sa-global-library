@@ -1,5 +1,6 @@
 import com.knrsacadamy.builds.Calculator
 def call (Map pipelineParams){
+    library('com.knrsacadamy.slb')
     Calculator calculator = new Calculator(this)
     environment {
          = ${pipelineParams.appName}
