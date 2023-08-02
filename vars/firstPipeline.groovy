@@ -2,11 +2,12 @@ import com.knrsacadamy.builds.Calculator
 def call (Map pipelineParams){
     library('com.knrsacadamy.slb')
     Calculator calculator = new Calculator(this)
-    environment {
-         = ${pipelineParams.appName}
-    }
+
     pipeline {
         agent any
+        environment {
+            APP_NAME = ${pipelineParams.appName}
+    }
         stages {
             stage('echo'){
                 steps {APP_NAME
