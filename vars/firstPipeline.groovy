@@ -8,7 +8,7 @@ def call (Map pipelineParams){
         }
         stages {
             stage('echo'){
-                steps {APP_NAME
+                steps {
                     scripts{
                         echo "Printing sum of two numbers"
                         println calculator.add(3,4)
