@@ -13,6 +13,7 @@ def call (Map pipelineParams){
                     script {
                         echo "Printing sum of two numbers"
                         println calculator.add(3,4)
+                        echo "Printing Multiple of two numbers"
                         println calculator.multiply(3,4)
                         echo "Microservice name is ${APP_NAME}"
                     }
