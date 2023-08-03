@@ -10,7 +10,7 @@ def call (Map pipelineParams){
         stages {
             stage('echo'){
                 steps {
-                    scripts{
+                    script {
                         echo "Printing sum of two numbers"
                         println calculator.add(3,4)
                         echo "Microservice name is ${APP_NAME}"
