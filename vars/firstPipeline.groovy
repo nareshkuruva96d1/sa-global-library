@@ -15,7 +15,6 @@ def call (Map pipelineParams){
                         println calculator.add(3,4)
                         echo "Microservice name is ${APP_NAME}"
                     }
-
                 }
             }
         }
